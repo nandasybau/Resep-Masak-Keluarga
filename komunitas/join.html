@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Join Komunitas Memasak</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f9f9f9;
+        padding: 40px;
+        text-align: center;
+      }
+      form {
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        max-width: 400px;
+        margin: 0 auto;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+      input,
+      textarea {
+        width: 90%;
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+      }
+      button {
+        background-color: #28a745;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #218838;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Gabung Komunitas Memasak</h1>
+
+    <form action="prosesform.php" method="post">
+      <input
+        type="text"
+        name="nama"
+        placeholder="Nama Lengkap"
+        required
+      /><br />
+      <input type="email" name="email" placeholder="Email" required /><br />
+      <input type="text" name="kota" placeholder="Asal Kota" required /><br />
+      <textarea
+        name="alasan"
+        placeholder="Mengapa Anda ingin bergabung?"
+        required
+      ></textarea
+      ><br />
+      <button type="submit">Gabung Sekarang</button>
+    </form>
+  </body>
+</html>
